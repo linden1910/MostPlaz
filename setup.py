@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setup(
     name="most_plaz",
-    version="0.0.3",
+    version="0.0.1",
     author="Linden",
-    author_email="<Linden@actfast.net>",
-    description="Most Plaz - A QtPyVCP based Virtual Control Panel for LinuxCNC plazma table",
+    author_email="<Linden@aktfast.net>",
+    description="most_plaz - A QtPyVCP based Virtual Control Panel for LinuxCNC",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/linden1910/MostPlaz",

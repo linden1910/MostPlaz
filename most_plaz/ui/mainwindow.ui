@@ -31,7 +31,7 @@
    <string>Most Plaz Control</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="../resources/resources.qrc">
+   <iconset>
     <normaloff>:/images/Plasma.png</normaloff>:/images/Plasma.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -833,14 +833,6 @@
          <string>Y+</string>
         </property>
        </widget>
-       <zorder>pushButton_Machine_Jog_Xneg</zorder>
-       <zorder>pushButton__Machine_Jog_Yneg</zorder>
-       <zorder>pushButton__Machine_Jog_Zpos</zorder>
-       <zorder>pushButton_Machine_Jog_Xpos</zorder>
-       <zorder>label_Machine_Jog</zorder>
-       <zorder>pushButton__Machine_Jog_Zneg</zorder>
-       <zorder>pushButton__Machine_Jog_Ypos</zorder>
-       <zorder>recentfilecombobox</zorder>
       </widget>
       <widget class="QFrame" name="frame_Torch_Control">
        <property name="geometry">
@@ -1283,6 +1275,41 @@
         </property>
         <property name="actionName" stdset="0">
          <string>machine.power.toggle</string>
+        </property>
+       </widget>
+       <widget class="ActionButton" name="actionbutton_2">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>100</y>
+          <width>176</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>E-Stop</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="actionName" stdset="0">
+         <string>machine.estop.toggle</string>
+        </property>
+       </widget>
+       <widget class="ActionButton" name="actionbutton_3">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>180</y>
+          <width>85</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Run</string>
+        </property>
+        <property name="actionName" stdset="0">
+         <string>program.run</string>
         </property>
        </widget>
       </widget>

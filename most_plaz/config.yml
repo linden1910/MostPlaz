@@ -1,4 +1,3 @@
-
 # Include the QtPyVCP default menubar.
 {% include "default_menubar.yml" %}
 
@@ -8,11 +7,19 @@ qtdesigner:
 
 vcp:
   name: most_plaz
-  version: v0.0.3
+  version: v0.0.1
   author: Linden
   description: >
-    A simple control for a 3 axis plazma cutter.
+    Simple vcp for 3 axisplazma table.
+    very much alpa software
     --chooser option.
+
+
+    Examples of what to included here:
+      * VCP Features
+      * Type of machine the VCP is for
+      * Development status
+      * Acknowledgments
 
 data_plugins:
   status:

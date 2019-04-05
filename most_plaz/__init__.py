@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""Main entry point for Most_Plaz_v1_beta.
+"""Main entry point for most_plaz.
 
 This module contains the code necessary to be able to launch QControl
 directly from the command line, without using qtpyvcp. It handles
@@ -8,15 +8,15 @@ parsing command line args and starting the main application.
 
 Example:
     Assuming the dir this file is located in is on the PATH, you can
-    launch Most_Plaz_v1_beta by saying::
+    launch most_plaz by saying::
 
-        $ most_plaz_v1_beta --ini=/path/to/config.ini [options ...]
+        $ most_plaz --ini=/path/to/config.ini [options ...]
 
     Run with the --help option to print a full list of options.
 
 """
 
-__version__ = '0.0.3'
+__version__ = '0.0.1'
 
 import os
 import qtpyvcp
