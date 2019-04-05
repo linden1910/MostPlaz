@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: most-plaz
+Version: 0.0.2
+Summary: Most Plaz - A QtPyVCP based Virtual Control Panel for LinuxCNC plazma table
+Home-page: https://github.com/linden1910/MostPlaz
+Author: Linden
+Author-email: <Linden@actfast.net>
+License: UNKNOWN
+Download-URL: https://github.com/linden1910/MostPlaz.git
+Description: # MostPlaz
+        Simple LinuxCNC QtPyVCP Gui for 3 axis Plazma Cutter.
+        This is very much a work in progress the ui design is more or less complete.
+        There is nothing behind it and no funcionality if buttons are clicked.
+        
+        Notes:
+        most_plaz_vcp folder contains .hal and .ini files for linuxcnc sim config
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

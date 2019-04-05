@@ -1,0 +1,6 @@
+[gui_scripts]
+most_plaz = most_plaz:main
+
+[qtpyvcp.vcp]
+most_plaz = most_plaz
+
