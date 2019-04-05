@@ -1,4 +1,3 @@
-
 # Include the QtPyVCP default menubar.
 {% include "default_menubar.yml" %}
 
@@ -7,12 +6,20 @@ qtdesigner:
   qss_file: ( application.kwargs.stylesheet )
 
 vcp:
-  name: most_plaz
-  version: v0.0.3 beta
-  author: Linden Penker
+  name: MyVCP
+  version: v0.0.1
+  author: My Name
   description: >
-    A simple control for a 3 axis plazma cutter.
+    Put a short description of your VCP here. This will be
+    shown in the VCP Chooser when launching QtPyVCP with the
     --chooser option.
+
+
+    Examples of what to included here:
+      * VCP Features
+      * Type of machine the VCP is for
+      * Development status
+      * Acknowledgments
 
 data_plugins:
   status:
@@ -24,7 +31,7 @@ windows:
   mainwindow:
     # Specify the class to use for the VCP's mainwindow
     #   Format: package.module:class
-    provider: most_plaz_v1_beta.mainwindow:MyMainWindow
+    provider: myvcp.mainwindow:MyMainWindow
 
     # Keyword arguments to pass when initializing the class.
     kwargs:

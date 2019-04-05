@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""Main entry point for Most_Plaz_v1_beta.
+"""Main entry point for MyVCP.
 
 This module contains the code necessary to be able to launch QControl
 directly from the command line, without using qtpyvcp. It handles
@@ -8,9 +8,9 @@ parsing command line args and starting the main application.
 
 Example:
     Assuming the dir this file is located in is on the PATH, you can
-    launch Most_Plaz_v1_beta by saying::
+    launch MyVCP by saying::
 
-        $ most_plaz_v1_beta --ini=/path/to/config.ini [options ...]
+        $ myvcp --ini=/path/to/config.ini [options ...]
 
     Run with the --help option to print a full list of options.
 
@@ -29,8 +29,8 @@ def main(opts=None):
 
     if opts is None:
         from qtpyvcp.utilities.opt_parser import parse_opts
-        opts = parse_opts(vcp_cmd='most_plaz_v1_beta',
-                          vcp_name='Most_Plaz_v1_beta',
+        opts = parse_opts(vcp_cmd='myvcp',
+                          vcp_name='MyVCP',
                           vcp_version=__version__)
 
     qtpyvcp.run_vcp(opts, VCP_CONFIG_FILE)
