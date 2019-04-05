@@ -8,8 +8,8 @@ qtdesigner:
 
 vcp:
   name: most_plaz
-  version: v0.0.3 beta
-  author: Linden Penker
+  version: v0.0.3
+  author: Linden
   description: >
     A simple control for a 3 axis plazma cutter.
     --chooser option.
@@ -24,7 +24,7 @@ windows:
   mainwindow:
     # Specify the class to use for the VCP's mainwindow
     #   Format: package.module:class
-    provider: most_plaz_v1_beta.mainwindow:MyMainWindow
+    provider: most_plaz.mainwindow:MyMainWindow
 
     # Keyword arguments to pass when initializing the class.
     kwargs:

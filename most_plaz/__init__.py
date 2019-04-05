@@ -16,7 +16,7 @@ Example:
 
 """
 
-__version__ = '0.0.1'
+__version__ = '0.0.3'
 
 import os
 import qtpyvcp
@@ -29,8 +29,8 @@ def main(opts=None):
 
     if opts is None:
         from qtpyvcp.utilities.opt_parser import parse_opts
-        opts = parse_opts(vcp_cmd='most_plaz_v1_beta',
-                          vcp_name='Most_Plaz_v1_beta',
+        opts = parse_opts(vcp_cmd='most_plaz',
+                          vcp_name='most_plaz',
                           vcp_version=__version__)
 
     qtpyvcp.run_vcp(opts, VCP_CONFIG_FILE)
