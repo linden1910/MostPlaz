@@ -11,3 +11,5 @@ Install editable "pip install -e ."
 open with designer "editvcp most_plaz"
 
 Remove "pip uninstall most_plaz"
+
+

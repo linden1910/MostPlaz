@@ -426,19 +426,6 @@
          </rect>
         </property>
        </widget>
-       <widget class="QScrollBar" name="horizontalScrollBar_Program">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>520</y>
-          <width>241</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
        <widget class="ActionButton" name="pushButton_Program_MDI">
         <property name="geometry">
          <rect>
@@ -456,19 +443,6 @@
         </property>
         <property name="text">
          <string>MDI </string>
-        </property>
-       </widget>
-       <widget class="QScrollBar" name="verticalScrollBar_Program">
-        <property name="geometry">
-         <rect>
-          <x>270</x>
-          <y>100</y>
-          <width>20</width>
-          <height>401</height>
-         </rect>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
         </property>
        </widget>
        <widget class="ActionButton" name="pushButton_Program_Stop">
@@ -493,10 +467,10 @@
        <widget class="GcodeEditor" name="gcodeeditor">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>170</y>
-          <width>241</width>
-          <height>341</height>
+          <x>10</x>
+          <y>150</y>
+          <width>291</width>
+          <height>391</height>
          </rect>
         </property>
         <property name="frameShape">
@@ -510,8 +484,8 @@
         <property name="geometry">
          <rect>
           <x>20</x>
-          <y>120</y>
-          <width>241</width>
+          <y>100</y>
+          <width>261</width>
           <height>33</height>
          </rect>
         </property>
