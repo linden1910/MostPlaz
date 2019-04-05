@@ -15,5 +15,8 @@ Description: # MostPlaz
         Notes:
         most_plaz_vcp folder contains .hal and .ini files for linuxcnc sim config
         
+        Install editable "pip install -e ."
+        
+        
 Platform: UNKNOWN
 Description-Content-Type: text/markdown
