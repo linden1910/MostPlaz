@@ -120,7 +120,7 @@
          <bool>true</bool>
         </property>
         <property name="actionName" stdset="0">
-         <string>machine.power.toggle</string>
+         <string>machine.estop.toggle</string>
         </property>
        </widget>
       </widget>
@@ -1021,19 +1021,6 @@
          <number>24</number>
         </property>
        </widget>
-       <widget class="QSlider" name="horizontalSlider_Torch_Control">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>140</y>
-          <width>241</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
        <widget class="ActionButton" name="actionbutton_Torch_Control_THC_OnOff">
         <property name="geometry">
          <rect>
@@ -1056,7 +1043,7 @@
          <bool>true</bool>
         </property>
         <property name="actionName" stdset="0">
-         <string>machine.power.toggle</string>
+         <string/>
         </property>
        </widget>
        <widget class="ActionButton" name="actionbutton_Torch_Control_Torch_OnOff">
@@ -1084,6 +1071,22 @@
          <string>machine.power.toggle</string>
         </property>
        </widget>
+       <widget class="ActionSlider" name="actionslider_Torch_power">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>241</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="actionName" stdset="0">
+         <string>spindle.override</string>
+        </property>
+       </widget>
       </widget>
       <widget class="QFrame" name="frame_Feed_Override">
        <property name="geometry">
@@ -1109,21 +1112,14 @@
           <height>16</height>
          </rect>
         </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
         <property name="value">
-         <number>24</number>
+         <number>50</number>
         </property>
-       </widget>
-       <widget class="QSlider" name="horizontalSlider_Feed_Override">
-        <property name="geometry">
-         <rect>
-          <x>80</x>
-          <y>30</y>
-          <width>511</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+        <property name="format">
+         <string>%p%</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_Feed_Override">
@@ -1143,6 +1139,28 @@
         </property>
         <property name="wordWrap">
          <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="ActionSlider" name="actionslider_Feed">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>30</y>
+          <width>511</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>200</number>
+        </property>
+        <property name="sliderPosition">
+         <number>100</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="actionName" stdset="0">
+         <string>machine.feed-override.set</string>
         </property>
        </widget>
       </widget>
@@ -1176,16 +1194,6 @@
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <widget class="QLCDNumber" name="lcdNumber_DRO_X">
-         <property name="geometry">
-          <rect>
-           <x>20</x>
-           <y>10</y>
-           <width>171</width>
-           <height>31</height>
-          </rect>
-         </property>
-        </widget>
         <widget class="QLabel" name="label_DRO_X">
          <property name="geometry">
           <rect>
@@ -1204,6 +1212,22 @@
           <string>X</string>
          </property>
         </widget>
+        <widget class="StatusLabel" name="statuslabel_DRO_X">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>16</y>
+           <width>181</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="rules" stdset="0">
+          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;position:abs?string&amp;axis=x&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+         </property>
+        </widget>
        </widget>
        <widget class="QFrame" name="frame_DRO_Y">
         <property name="geometry">
@@ -1220,16 +1244,6 @@
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <widget class="QLCDNumber" name="lcdNumber_DRO_Y">
-         <property name="geometry">
-          <rect>
-           <x>20</x>
-           <y>10</y>
-           <width>171</width>
-           <height>31</height>
-          </rect>
-         </property>
-        </widget>
         <widget class="QLabel" name="label_DRO_Y">
          <property name="geometry">
           <rect>
@@ -1248,6 +1262,22 @@
           <string>Y</string>
          </property>
         </widget>
+        <widget class="StatusLabel" name="statuslabel_DRO_Y">
+         <property name="geometry">
+          <rect>
+           <x>13</x>
+           <y>9</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="rules" stdset="0">
+          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;position:abs?string&amp;axis=y&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+         </property>
+        </widget>
        </widget>
        <widget class="QFrame" name="frame__DRO_Z">
         <property name="geometry">
@@ -1264,16 +1294,6 @@
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <widget class="QLCDNumber" name="lcdNumber_DRO_Z">
-         <property name="geometry">
-          <rect>
-           <x>20</x>
-           <y>10</y>
-           <width>171</width>
-           <height>31</height>
-          </rect>
-         </property>
-        </widget>
         <widget class="QLabel" name="label_DRO_Z">
          <property name="geometry">
           <rect>
@@ -1290,6 +1310,22 @@
          </property>
          <property name="text">
           <string>Z</string>
+         </property>
+        </widget>
+        <widget class="StatusLabel" name="statuslabel_Z">
+         <property name="geometry">
+          <rect>
+           <x>13</x>
+           <y>9</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="rules" stdset="0">
+          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;position:abs?string&amp;axis=z&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
          </property>
         </widget>
        </widget>
@@ -1696,6 +1732,16 @@
    <class>ActionButton</class>
    <extends>QPushButton</extends>
    <header>qtpyvcp.widgets.button_widgets.action_button</header>
+  </customwidget>
+  <customwidget>
+   <class>ActionSlider</class>
+   <extends>QSlider</extends>
+   <header>qtpyvcp.widgets.input_widgets.action_slider</header>
+  </customwidget>
+  <customwidget>
+   <class>StatusLabel</class>
+   <extends>QLabel</extends>
+   <header>qtpyvcp.widgets.display_widgets.status_label</header>
   </customwidget>
  </customwidgets>
  <resources>

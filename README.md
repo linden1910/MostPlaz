@@ -8,8 +8,7 @@ Notes: most_plaz_vcp folder contains .hal and .ini files for linuxcnc sim config
 
 Install editable "pip install -e ."
 
-open with designer "editvcp most_plaz"
-
 Remove "pip uninstall most_plaz"
 
+open with designer "editvcp most_plaz"
 
