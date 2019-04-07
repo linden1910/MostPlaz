@@ -12,3 +12,7 @@ Remove "pip uninstall most_plaz"
 
 open with designer "editvcp most_plaz"
 
+#git comands
+git add *
+git commit -m "mesage note"
+git push origin master
