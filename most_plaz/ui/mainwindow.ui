@@ -1611,10 +1611,10 @@
          <enum>Qt::NoFocus</enum>
         </property>
         <property name="text">
-         <string> </string>
+         <string/>
         </property>
         <property name="rules" stdset="0">
-         <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:exec_state?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;string&quot;: &quot;'Machine Statuse: &quot;}]</string>
+         <string/>
         </property>
         <property name="dialogName" stdset="0">
          <string>_dialog</string>
@@ -1642,9 +1642,7 @@
          <string/>
         </property>
         <property name="rules" stdset="0">
-         <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:file&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;string&quot;:}]
-
-</string>
+         <string/>
         </property>
         <property name="dialogName" stdset="0">
          <string>_dialog</string>

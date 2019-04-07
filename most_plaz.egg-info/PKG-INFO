@@ -26,5 +26,7 @@ Description: MostPlaz
         git commit -m "mesage note"
         git push origin master
         
+        git pull
+        
 Platform: UNKNOWN
 Description-Content-Type: text/markdown
