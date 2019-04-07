@@ -1,6 +1,6 @@
 QsciScintilla {
-    qproperty-backgroundcolor: #D9DADB;
-    qproperty-marginbackgroundcolor: #D9DADB;
+    qproperty-backgroundcolor: #D5DADB;
+    qproperty-marginbackgroundcolor: #D3DADB;
 }
 
 ActionButton[actionName="machine.estop.toggle"]:checked{

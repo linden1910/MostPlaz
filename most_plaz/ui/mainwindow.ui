@@ -950,7 +950,7 @@
         </property>
        </widget>
       </widget>
-      <widget class="QFrame" name="frame">
+      <widget class="QFrame" name="frame_Machine_Mode">
        <property name="geometry">
         <rect>
          <x>430</x>

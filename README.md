@@ -18,3 +18,5 @@ git commit -m "mesage note"
 git push origin master
 
 git pull
+
+/home/plaz/Git/Dev-QtpyVcp/qtpyvcp/pyqt5designer/Qt5.7.1-64bit
