@@ -1440,7 +1440,7 @@
           <bool>true</bool>
          </property>
          <property name="actionName" stdset="0">
-          <string/>
+          <string>vtkbackplot.setViewP</string>
          </property>
         </widget>
         <widget class="ActionButton" name="actionbutton_Display_Control_View_X">
@@ -1465,7 +1465,7 @@
           <bool>true</bool>
          </property>
          <property name="actionName" stdset="0">
-          <string/>
+          <string>vtkbackplot.setViewX</string>
          </property>
         </widget>
         <widget class="ActionButton" name="actionbutton_Display_Control_View_Y">
@@ -1490,7 +1490,7 @@
           <bool>true</bool>
          </property>
          <property name="actionName" stdset="0">
-          <string/>
+          <string>vtkbackplot.setViewY</string>
          </property>
         </widget>
         <widget class="ActionButton" name="actionbutton_Display_Control_View_Z">
@@ -1515,7 +1515,7 @@
           <bool>true</bool>
          </property>
          <property name="actionName" stdset="0">
-          <string/>
+          <string>vtkbackplot.setViewZ</string>
          </property>
         </widget>
         <widget class="ActionButton" name="actionbutton_Display_Control_Zoom_In">
@@ -1540,7 +1540,7 @@
           <bool>false</bool>
          </property>
          <property name="actionName" stdset="0">
-          <string/>
+          <string>vtkbackplot.zoomIn</string>
          </property>
         </widget>
         <widget class="ActionButton" name="actionbutton_Display_Control_Zoom_Out">
@@ -1565,7 +1565,7 @@
           <bool>false</bool>
          </property>
          <property name="actionName" stdset="0">
-          <string/>
+          <string>vtkbackplot.zoomOut</string>
          </property>
         </widget>
         <widget class="ActionButton" name="actionbutton_Display_Control_Clear_Plot">
@@ -1590,11 +1590,11 @@
           <bool>false</bool>
          </property>
          <property name="actionName" stdset="0">
-          <string/>
+          <string>vtkbackplot.clearLivePlot</string>
          </property>
         </widget>
        </widget>
-       <widget class="GcodeBackplot" name="gcodebackplot" native="true">
+       <widget class="GcodeBackplot" name="vtkbackplot" native="true">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -1931,11 +1931,6 @@
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>ActionSlider</class>
-   <extends>QSlider</extends>
-   <header>qtpyvcp.widgets.input_widgets.action_slider</header>
-  </customwidget>
-  <customwidget>
    <class>StatusLabel</class>
    <extends>QLabel</extends>
    <header>qtpyvcp.widgets.display_widgets.status_label</header>
@@ -1949,6 +1944,11 @@
    <class>MDIEntry</class>
    <extends>QLineEdit</extends>
    <header>qtpyvcp.widgets.input_widgets.mdientry_widget</header>
+  </customwidget>
+  <customwidget>
+   <class>ActionSlider</class>
+   <extends>QSlider</extends>
+   <header>qtpyvcp.widgets.input_widgets.action_slider</header>
   </customwidget>
  </customwidgets>
  <resources>
