@@ -152,6 +152,34 @@
          <string>Part Touch Off</string>
         </property>
        </widget>
+       <widget class="DialogButton" name="zero_dbutton">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>40</y>
+          <width>100</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Part Zero Set</string>
+        </property>
+        <property name="dialogName" stdset="0">
+         <string>set_work_offsets</string>
+        </property>
+       </widget>
       </widget>
       <widget class="QFrame" name="frame_Machine_Home">
        <property name="geometry">
@@ -990,21 +1018,21 @@
          <rect>
           <x>10</x>
           <y>110</y>
-          <width>231</width>
+          <width>241</width>
           <height>28</height>
          </rect>
         </property>
         <property name="font">
          <font>
-          <family>Monospace</family>
-          <pointsize>11</pointsize>
+          <family>Noto Sans</family>
+          <pointsize>10</pointsize>
          </font>
         </property>
         <property name="focusPolicy">
          <enum>Qt::NoFocus</enum>
         </property>
         <property name="rules" stdset="0">
-         <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:settings&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;status:spindle.0.override&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;\&quot;Speed:{:4.0f} {:4.0%}\&quot;.format(ch[0][2], ch[1])&quot;, &quot;name&quot;: &quot;Spindle Data&quot;}]</string>
+         <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:settings&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;status:spindle.0.override&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;\&quot;Tourch Power:{:4.0f} {:4.0%}\&quot;.format(ch[0][2], ch[1])&quot;, &quot;name&quot;: &quot;Spindle Data&quot;}]</string>
         </property>
         <property name="dialogName" stdset="0">
          <string>speed_override_dialog</string>
@@ -1091,14 +1119,14 @@
          <rect>
           <x>80</x>
           <y>0</y>
-          <width>501</width>
+          <width>511</width>
           <height>28</height>
          </rect>
         </property>
         <property name="font">
          <font>
-          <family>Monospace</family>
-          <pointsize>11</pointsize>
+          <family>Noto Sans</family>
+          <pointsize>10</pointsize>
          </font>
         </property>
         <property name="focusPolicy">
@@ -1307,39 +1335,19 @@
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <widget class="QLabel" name="label_DRO_Tool_Tool_Number">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
-           <y>10</y>
-           <width>71</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>12</pointsize>
-           <weight>50</weight>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string>Tool Info</string>
-         </property>
-        </widget>
         <widget class="DialogButton" name="dialogbutton">
          <property name="geometry">
           <rect>
-           <x>80</x>
+           <x>10</x>
            <y>7</y>
-           <width>161</width>
+           <width>231</width>
            <height>41</height>
           </rect>
          </property>
          <property name="font">
           <font>
-           <family>Monospace</family>
-           <pointsize>11</pointsize>
+           <family>Noto Sans</family>
+           <pointsize>10</pointsize>
           </font>
          </property>
          <property name="focusPolicy">
