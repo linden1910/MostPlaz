@@ -32,7 +32,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>:/images/Plasma.png</normaloff>:/images/Plasma.png</iconset>
+    <normaloff>../resources/Plasma.png</normaloff>../resources/Plasma.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -1609,7 +1609,7 @@
      <rect>
       <x>279</x>
       <y>142</y>
-      <width>149</width>
+      <width>142</width>
       <height>339</height>
      </rect>
     </property>
@@ -1661,7 +1661,7 @@
     <property name="title">
      <string>About</string>
     </property>
-    <addaction name="actionMost_Plaz_Control_V_1_beta"/>
+    <addaction name="actionmost_plaz"/>
     <addaction name="actionLicence"/>
     <addaction name="actionCredits"/>
    </widget>
@@ -1752,9 +1752,9 @@
     <string>Calibration</string>
    </property>
   </action>
-  <action name="actionMost_Plaz_Control_V_1_beta">
+  <action name="actionmost_plaz">
    <property name="text">
-    <string>Most Plaz Control V 1 beta</string>
+    <string>Most Plaz</string>
    </property>
   </action>
   <action name="actionLicence">
