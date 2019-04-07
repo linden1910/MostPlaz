@@ -44,6 +44,31 @@ windows:
       # Set the window title from from the date in the vcp section above.
       title: ( vcp.name ) ( vcp.version)
 
+dialogs:
+  tool_dialog: 
+    provider: qtpyvcp.widgets.dialogs.base_dialog:BaseDialog
+    kwargs:
+      ui_file: {{ file.dir }}/dialogs/tool_dialog.ui
+      popup: yes
+
+  feed_override_dialog: 
+    provider: qtpyvcp.widgets.dialogs.base_dialog:BaseDialog
+    kwargs:
+      ui_file: {{ file.dir }}/dialogs/feed_override_dialog.ui
+      popup: yes
+
+  speed_override_dialog: 
+    provider: qtpyvcp.widgets.dialogs.base_dialog:BaseDialog
+    kwargs:
+      ui_file: {{ file.dir }}/dialogs/speed_override_dialog.ui
+      popup: yes
+
+  tool_table:
+    provider: qtpyvcp.widgets.dialogs.base_dialog:BaseDialog
+    kwargs:
+      ui_file: {{ file.dir }}/dialogs/tool_table.ui
+      popup: yes
+
 application:
   kwargs:
     # Specify the application wide stylesheet.
