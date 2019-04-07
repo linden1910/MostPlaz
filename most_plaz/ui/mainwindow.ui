@@ -1419,7 +1419,7 @@
         <rect>
          <x>20</x>
          <y>130</y>
-         <width>601</width>
+         <width>231</width>
          <height>441</height>
         </rect>
        </property>
@@ -1580,6 +1580,16 @@
         </property>
        </widget>
       </widget>
+      <widget class="GcodeBackplot" name="vtkbackplot" native="true">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>140</y>
+         <width>291</width>
+         <height>571</height>
+        </rect>
+       </property>
+      </widget>
      </widget>
     </item>
    </layout>
@@ -1609,7 +1619,7 @@
      <rect>
       <x>279</x>
       <y>142</y>
-      <width>142</width>
+      <width>149</width>
       <height>339</height>
      </rect>
     </property>

@@ -7,10 +7,10 @@ qtdesigner:
 
 vcp:
   name: most_plaz
-  version: v0.0.1
+  version: v0.0.2
   author: Linden
   description: >
-    Simple vcp for 3 axisplazma table.
+    Simple vcp for 3 axis plazma table.
     very much alpa software
     --chooser option.
 
