@@ -256,7 +256,7 @@
          <bool>false</bool>
         </property>
         <property name="actionName" stdset="0">
-         <string>machine.power.x</string>
+         <string>machine.home.axis:x</string>
         </property>
        </widget>
        <widget class="ActionButton" name="actionbutton_Machine_Home_Y">
@@ -281,7 +281,7 @@
          <bool>false</bool>
         </property>
         <property name="actionName" stdset="0">
-         <string>machine.power.y</string>
+         <string>machine.home.axis:y</string>
         </property>
        </widget>
        <widget class="ActionButton" name="actionbutton_Machine_Home_Z">
@@ -306,7 +306,7 @@
          <bool>false</bool>
         </property>
         <property name="actionName" stdset="0">
-         <string>machine.home.z</string>
+         <string>machine.home.axis:z</string>
         </property>
        </widget>
       </widget>
@@ -364,31 +364,6 @@
          </rect>
         </property>
        </widget>
-       <widget class="ActionButton" name="actionbutton_Program_Run">
-        <property name="geometry">
-         <rect>
-          <x>50</x>
-          <y>40</y>
-          <width>50</width>
-          <height>50</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Run</string>
-        </property>
-        <property name="checkable">
-         <bool>true</bool>
-        </property>
-        <property name="actionName" stdset="0">
-         <string>program.run</string>
-        </property>
-       </widget>
        <widget class="ActionButton" name="actionbutton_Program_Step">
         <property name="geometry">
          <rect>
@@ -412,56 +387,6 @@
         </property>
         <property name="actionName" stdset="0">
          <string/>
-        </property>
-       </widget>
-       <widget class="ActionButton" name="actionbutton_Program_Pause">
-        <property name="geometry">
-         <rect>
-          <x>170</x>
-          <y>40</y>
-          <width>50</width>
-          <height>50</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Pause</string>
-        </property>
-        <property name="checkable">
-         <bool>true</bool>
-        </property>
-        <property name="actionName" stdset="0">
-         <string>program.pause</string>
-        </property>
-       </widget>
-       <widget class="ActionButton" name="actionbutton_Program_Stop">
-        <property name="geometry">
-         <rect>
-          <x>230</x>
-          <y>40</y>
-          <width>50</width>
-          <height>50</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Stop</string>
-        </property>
-        <property name="checkable">
-         <bool>true</bool>
-        </property>
-        <property name="actionName" stdset="0">
-         <string>program.abort</string>
         </property>
        </widget>
        <widget class="QLabel" name="label">
@@ -502,6 +427,110 @@
         </property>
         <property name="placeholderText">
          <string>MDI</string>
+        </property>
+       </widget>
+       <widget class="ActionButton" name="actionbutton_Program_Run">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>40</y>
+          <width>50</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>RUN</string>
+        </property>
+        <property name="actionName" stdset="0">
+         <string>program.run</string>
+        </property>
+       </widget>
+       <widget class="ActionButton" name="actionbutton_Program_Pause">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>40</y>
+          <width>50</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Pause</string>
+        </property>
+        <property name="actionName" stdset="0">
+         <string>program.pause</string>
+        </property>
+       </widget>
+       <widget class="ActionButton" name="actionbutton_Program_Stop">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>40</y>
+          <width>50</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>STOP</string>
+        </property>
+        <property name="actionName" stdset="0">
+         <string>program.abort</string>
         </property>
        </widget>
       </widget>
@@ -1032,7 +1061,7 @@
          <enum>Qt::NoFocus</enum>
         </property>
         <property name="rules" stdset="0">
-         <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:settings&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;status:spindle.0.override&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;\&quot;Tourch Power:{:4.0f} {:4.0%}\&quot;.format(ch[0][2], ch[1])&quot;, &quot;name&quot;: &quot;Spindle Data&quot;}]</string>
+         <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:settings&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;status:spindle.0.override&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;\&quot;Torch Power:{:4.0f} {:4.0%}\&quot;.format(ch[0][2], ch[1])&quot;, &quot;name&quot;: &quot;Spindle Data&quot;}]</string>
         </property>
         <property name="dialogName" stdset="0">
          <string>speed_override_dialog</string>
