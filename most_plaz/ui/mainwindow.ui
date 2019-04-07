@@ -1445,7 +1445,7 @@
           <bool>true</bool>
          </property>
          <property name="actionName" stdset="0">
-          <string>vtkbackplot.setViewP</string>
+          <string>gcodebackplot.setViewP</string>
          </property>
         </widget>
         <widget class="ActionButton" name="actionbutton_Display_Control_View_X">
@@ -1470,7 +1470,7 @@
           <bool>true</bool>
          </property>
          <property name="actionName" stdset="0">
-          <string>vtkbackplot.setViewX</string>
+          <string>setViewX</string>
          </property>
         </widget>
         <widget class="ActionButton" name="actionbutton_Display_Control_View_Y">
@@ -1545,7 +1545,7 @@
           <bool>false</bool>
          </property>
          <property name="actionName" stdset="0">
-          <string>vtkbackplot.zoomIn</string>
+          <string>gcodebackplot.zoomIn</string>
          </property>
         </widget>
         <widget class="ActionButton" name="actionbutton_Display_Control_Zoom_Out">
@@ -1599,7 +1599,7 @@
          </property>
         </widget>
        </widget>
-       <widget class="VTKBackPlot" name="vtk" native="true">
+       <widget class="GcodeBackplot" name="gcodebackplot" native="true">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -1608,19 +1608,14 @@
           <height>461</height>
          </rect>
         </property>
-        <property name="backgroundColor" stdset="0">
-         <color>
-          <red>45</red>
-          <green>45</green>
-          <blue>45</blue>
-         </color>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
         </property>
-        <property name="backgroundColor2" stdset="0">
-         <color>
-          <red>85</red>
-          <green>87</green>
-          <blue>83</blue>
-         </color>
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
         </property>
        </widget>
       </widget>
@@ -1955,14 +1950,15 @@
    <header>qtpyvcp.widgets.input_widgets.action_slider</header>
   </customwidget>
   <customwidget>
-   <class>VTKBackPlot</class>
-   <extends>QWidget</extends>
-   <header>qtpyvcp.widgets.display_widgets.vtk_backplot.vtk_backplot</header>
-  </customwidget>
-  <customwidget>
    <class>VCPSettingsSlider</class>
    <extends>QSlider</extends>
    <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
+  </customwidget>
+  <customwidget>
+   <class>GcodeBackplot</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.display_widgets.gcode_backplot.gcode_backplot</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources>
