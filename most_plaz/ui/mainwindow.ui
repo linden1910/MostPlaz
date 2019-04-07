@@ -152,81 +152,6 @@
          <string>Part Touch Off</string>
         </property>
        </widget>
-       <widget class="ActionButton" name="actionbutton_Part_touch_off_X">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>40</y>
-          <width>50</width>
-          <height>50</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>X</string>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-        <property name="actionName" stdset="0">
-         <string>machine.power.toggle</string>
-        </property>
-       </widget>
-       <widget class="ActionButton" name="actionbutton_Part_Touch_Off_Y">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>40</y>
-          <width>50</width>
-          <height>50</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Y</string>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-        <property name="actionName" stdset="0">
-         <string>machine.power.toggle</string>
-        </property>
-       </widget>
-       <widget class="ActionButton" name="actionbutton_Part_Touch_Off_Z">
-        <property name="geometry">
-         <rect>
-          <x>130</x>
-          <y>40</y>
-          <width>50</width>
-          <height>50</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Z</string>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-        <property name="actionName" stdset="0">
-         <string>machine.power.toggle</string>
-        </property>
-       </widget>
       </widget>
       <widget class="QFrame" name="frame_Machine_Home">
        <property name="geometry">
@@ -385,16 +310,6 @@
          <string>Program</string>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit_Program">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>560</y>
-          <width>221</width>
-          <height>27</height>
-         </rect>
-        </property>
-       </widget>
        <widget class="GcodeEditor" name="gcodeeditor">
         <property name="geometry">
          <rect>
@@ -540,29 +455,25 @@
          <string>Open File</string>
         </property>
        </widget>
-       <widget class="ActionButton" name="actionbutton__Program_MDI">
+       <widget class="MDIEntry" name="mdientry">
         <property name="geometry">
          <rect>
-          <x>240</x>
+          <x>21</x>
           <y>560</y>
-          <width>60</width>
-          <height>30</height>
+          <width>281</width>
+          <height>41</height>
          </rect>
         </property>
         <property name="font">
          <font>
-          <weight>75</weight>
-          <bold>true</bold>
+          <pointsize>12</pointsize>
          </font>
         </property>
-        <property name="text">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="placeholderText">
          <string>MDI</string>
-        </property>
-        <property name="checkable">
-         <bool>false</bool>
-        </property>
-        <property name="actionName" stdset="0">
-         <string>machine.power.toggle</string>
         </property>
        </widget>
       </widget>
@@ -1008,19 +919,6 @@
          <string>Torch Power Setting</string>
         </property>
        </widget>
-       <widget class="QProgressBar" name="progressBar_Torch_Control">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>110</y>
-          <width>241</width>
-          <height>23</height>
-         </rect>
-        </property>
-        <property name="value">
-         <number>24</number>
-        </property>
-       </widget>
        <widget class="ActionButton" name="actionbutton_Torch_Control_THC_OnOff">
         <property name="geometry">
          <rect>
@@ -1087,6 +985,31 @@
          <string>spindle.override</string>
         </property>
        </widget>
+       <widget class="DialogButton" name="dialogbutton_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>231</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Monospace</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="rules" stdset="0">
+         <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:settings&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;status:spindle.0.override&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;\&quot;Speed:{:4.0f} {:4.0%}\&quot;.format(ch[0][2], ch[1])&quot;, &quot;name&quot;: &quot;Spindle Data&quot;}]</string>
+        </property>
+        <property name="dialogName" stdset="0">
+         <string>speed_override_dialog</string>
+        </property>
+       </widget>
       </widget>
       <widget class="QFrame" name="frame_Feed_Override">
        <property name="geometry">
@@ -1126,30 +1049,13 @@
         <property name="geometry">
          <rect>
           <x>80</x>
-          <y>30</y>
+          <y>19</y>
           <width>511</width>
-          <height>20</height>
+          <height>31</height>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">.ActionSlider {
-    min-height: 50px;
-    max-height: 50px;
-    background: rgb(136, 138, 133);
-}
-.ActionSlider::groove:horizontal {
-    border: 1px solid rgb(0,0,0);
-    height: 5px;
-    margin: 0 12px;
-}
-.ActionSlider::handle:horizontal {
-    background: rgb(0,0,0);
-    border: 5px solid rgb(186, 189, 182);
-    width: 23px;
-    height: 100px;
-    margin: -24px -12px;
-}
-</string>
+         <string notr="true"/>
         </property>
         <property name="maximum">
          <number>200</number>
@@ -1178,6 +1084,31 @@
         </property>
         <property name="rules" stdset="0">
          <string/>
+        </property>
+       </widget>
+       <widget class="DialogButton" name="dialogbutton_3">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>0</y>
+          <width>501</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Monospace</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="rules" stdset="0">
+         <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:settings?feed&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;status:feedrate&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;\&quot;Feed:{:5.1f} {:4.0%}\&quot;.format(ch[0], ch[1])&quot;, &quot;name&quot;: &quot;Tool Data&quot;}]</string>
+        </property>
+        <property name="dialogName" stdset="0">
+         <string>feed_override_dialog</string>
         </property>
        </widget>
       </widget>
@@ -1233,14 +1164,14 @@
          <property name="geometry">
           <rect>
            <x>10</x>
-           <y>16</y>
+           <y>6</y>
            <width>181</width>
-           <height>21</height>
+           <height>31</height>
           </rect>
          </property>
          <property name="font">
           <font>
-           <pointsize>30</pointsize>
+           <pointsize>25</pointsize>
           </font>
          </property>
          <property name="alignment">
@@ -1295,7 +1226,7 @@
          </property>
          <property name="font">
           <font>
-           <pointsize>20</pointsize>
+           <pointsize>25</pointsize>
           </font>
          </property>
          <property name="alignment">
@@ -1350,7 +1281,7 @@
          </property>
          <property name="font">
           <font>
-           <pointsize>30</pointsize>
+           <pointsize>25</pointsize>
           </font>
          </property>
          <property name="alignment">
@@ -1376,62 +1307,49 @@
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <widget class="QLCDNumber" name="lcdNumber_DRO_Tool_Tool_Number">
-         <property name="geometry">
-          <rect>
-           <x>20</x>
-           <y>20</y>
-           <width>91</width>
-           <height>21</height>
-          </rect>
-         </property>
-        </widget>
         <widget class="QLabel" name="label_DRO_Tool_Tool_Number">
          <property name="geometry">
           <rect>
-           <x>20</x>
-           <y>0</y>
-           <width>91</width>
-           <height>21</height>
+           <x>10</x>
+           <y>10</y>
+           <width>71</width>
+           <height>31</height>
           </rect>
          </property>
          <property name="font">
           <font>
-           <weight>75</weight>
-           <bold>true</bold>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
           </font>
          </property>
          <property name="text">
-          <string>Tool Number</string>
+          <string>Tool Info</string>
          </property>
         </widget>
-        <widget class="QLCDNumber" name="lcdNumber_DRO_Tool_Tool_Diameter">
+        <widget class="DialogButton" name="dialogbutton">
          <property name="geometry">
           <rect>
-           <x>140</x>
-           <y>20</y>
-           <width>91</width>
-           <height>21</height>
-          </rect>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_DRO_Tool_Tool_Diameter">
-         <property name="geometry">
-          <rect>
-           <x>140</x>
-           <y>0</y>
-           <width>91</width>
-           <height>21</height>
+           <x>80</x>
+           <y>7</y>
+           <width>161</width>
+           <height>41</height>
           </rect>
          </property>
          <property name="font">
           <font>
-           <weight>75</weight>
-           <bold>true</bold>
+           <family>Monospace</family>
+           <pointsize>11</pointsize>
           </font>
          </property>
-         <property name="text">
-          <string>Tool Diameter</string>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="rules" stdset="0">
+          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;tooltable:current_tool?diameter&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;tooltable:current_tool?z_offset&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;tooltable:current_tool?number&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Tool: \u00d8 -.---- L -.---' if ch[2] == 0 else  'Tool: \u00d8 %6.4f L %5.3f' % (ch[0], ch[1])&quot;, &quot;name&quot;: &quot;Tool Data&quot;}]</string>
+         </property>
+         <property name="dialogName" stdset="0">
+          <string>tool_dialog</string>
          </property>
         </widget>
        </widget>
@@ -1764,6 +1682,7 @@
    <class>ActionButton</class>
    <extends>QPushButton</extends>
    <header>qtpyvcp.widgets.button_widgets.action_button</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>ActionSlider</class>
@@ -1774,6 +1693,16 @@
    <class>StatusLabel</class>
    <extends>QLabel</extends>
    <header>qtpyvcp.widgets.display_widgets.status_label</header>
+  </customwidget>
+  <customwidget>
+   <class>DialogButton</class>
+   <extends>QPushButton</extends>
+   <header>qtpyvcp.widgets.button_widgets.dialog_button</header>
+  </customwidget>
+  <customwidget>
+   <class>MDIEntry</class>
+   <extends>QLineEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.mdientry_widget</header>
   </customwidget>
  </customwidgets>
  <resources>
