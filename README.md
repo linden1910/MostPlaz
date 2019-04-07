@@ -16,3 +16,5 @@ open with designer "editvcp most_plaz"
 git add *
 git commit -m "mesage note"
 git push origin master
+
+git pull
