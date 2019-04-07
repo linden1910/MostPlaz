@@ -124,63 +124,6 @@
         </property>
        </widget>
       </widget>
-      <widget class="QFrame" name="frame_Part_touch_Off">
-       <property name="geometry">
-        <rect>
-         <x>430</x>
-         <y>10</y>
-         <width>191</width>
-         <height>111</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::WinPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-       <widget class="QLabel" name="label_Part_Touch_Off">
-        <property name="geometry">
-         <rect>
-          <x>50</x>
-          <y>10</y>
-          <width>91</width>
-          <height>17</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Part Touch Off</string>
-        </property>
-       </widget>
-       <widget class="DialogButton" name="dialogbutton_Part_Touch_Off_Zero">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>40</y>
-          <width>100</width>
-          <height>50</height>
-         </rect>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>50</width>
-          <height>50</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>100</width>
-          <height>80</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>Part Zero Set</string>
-        </property>
-        <property name="dialogName" stdset="0">
-         <string>set_work_offsets</string>
-        </property>
-       </widget>
-      </widget>
       <widget class="QFrame" name="frame_Machine_Home">
        <property name="geometry">
         <rect>
@@ -439,6 +382,9 @@
         <property name="text">
          <string>RUN</string>
         </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
         <property name="actionName" stdset="0">
          <string>program.run</string>
         </property>
@@ -474,6 +420,9 @@
         <property name="text">
          <string>Pause</string>
         </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
         <property name="actionName" stdset="0">
          <string>program.pause</string>
         </property>
@@ -507,6 +456,9 @@
         </property>
         <property name="text">
          <string>STOP</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
         </property>
         <property name="actionName" stdset="0">
          <string>program.abort</string>
@@ -554,7 +506,7 @@
          <x>750</x>
          <y>460</y>
          <width>271</width>
-         <height>231</height>
+         <height>151</height>
         </rect>
        </property>
        <property name="frameShape">
@@ -636,7 +588,7 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>140</y>
+          <y>120</y>
           <width>241</width>
           <height>18</height>
          </rect>
@@ -652,7 +604,7 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>110</y>
+          <y>90</y>
           <width>241</width>
           <height>28</height>
          </rect>
@@ -1001,7 +953,7 @@
       <widget class="QFrame" name="frame">
        <property name="geometry">
         <rect>
-         <x>630</x>
+         <x>430</x>
          <y>10</y>
          <width>311</width>
          <height>111</height>
@@ -1166,9 +1118,9 @@
       <widget class="QFrame" name="frame_Machine_Jog">
        <property name="geometry">
         <rect>
-         <x>950</x>
+         <x>750</x>
          <y>10</y>
-         <width>391</width>
+         <width>311</width>
          <height>131</height>
         </rect>
        </property>
@@ -1183,8 +1135,8 @@
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>91</width>
-          <height>21</height>
+          <width>51</width>
+          <height>41</height>
          </rect>
         </property>
         <property name="text">
@@ -1200,7 +1152,7 @@
        <widget class="ActionButton" name="actionbutton_Machine_Jog_Xneg">
         <property name="geometry">
          <rect>
-          <x>50</x>
+          <x>10</x>
           <y>70</y>
           <width>50</width>
           <height>50</height>
@@ -1225,7 +1177,7 @@
        <widget class="ActionButton" name="actionbutton_Machine_Jog_Xpos">
         <property name="geometry">
          <rect>
-          <x>190</x>
+          <x>130</x>
           <y>70</y>
           <width>50</width>
           <height>50</height>
@@ -1250,7 +1202,7 @@
        <widget class="ActionButton" name="actionbutton_Machine_Jog_Yneg">
         <property name="geometry">
          <rect>
-          <x>120</x>
+          <x>70</x>
           <y>70</y>
           <width>50</width>
           <height>50</height>
@@ -1275,7 +1227,7 @@
        <widget class="ActionButton" name="actionbutton_Machine_Jog_Ypos">
         <property name="geometry">
          <rect>
-          <x>120</x>
+          <x>70</x>
           <y>10</y>
           <width>50</width>
           <height>50</height>
@@ -1300,7 +1252,7 @@
        <widget class="ActionButton" name="actionbutton_Machine_Jog_Zpos">
         <property name="geometry">
          <rect>
-          <x>260</x>
+          <x>190</x>
           <y>10</y>
           <width>50</width>
           <height>50</height>
@@ -1325,7 +1277,7 @@
        <widget class="ActionButton" name="actionbutton_Machine_Jog_Zneg">
         <property name="geometry">
          <rect>
-          <x>260</x>
+          <x>190</x>
           <y>70</y>
           <width>50</width>
           <height>50</height>
@@ -1350,10 +1302,10 @@
        <widget class="VCPSettingsSlider" name="settings_slider_Machine_Jog_Speed">
         <property name="geometry">
          <rect>
-          <x>340</x>
-          <y>40</y>
+          <x>260</x>
+          <y>50</y>
           <width>21</width>
-          <height>81</height>
+          <height>71</height>
          </rect>
         </property>
         <property name="settingName" stdset="0">
@@ -1363,14 +1315,20 @@
        <widget class="QLabel" name="label_Machine_Jog_Speed">
         <property name="geometry">
          <rect>
-          <x>320</x>
+          <x>250</x>
           <y>10</y>
-          <width>61</width>
-          <height>20</height>
+          <width>41</width>
+          <height>31</height>
          </rect>
         </property>
         <property name="text">
          <string>Jog Speed</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
         </property>
        </widget>
       </widget>
@@ -1624,7 +1582,7 @@
         <rect>
          <x>609</x>
          <y>619</y>
-         <width>131</width>
+         <width>411</width>
          <height>71</height>
         </rect>
        </property>
@@ -1634,6 +1592,196 @@
        <property name="frameShadow">
         <enum>QFrame::Raised</enum>
        </property>
+       <widget class="DialogButton" name="dialogbutton_DRO_Tool_Info_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>391</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Sans</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string> </string>
+        </property>
+        <property name="rules" stdset="0">
+         <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:exec_state?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;string&quot;: &quot;'Machine Statuse: &quot;}]</string>
+        </property>
+        <property name="dialogName" stdset="0">
+         <string>_dialog</string>
+        </property>
+       </widget>
+       <widget class="DialogButton" name="dialogbutton_DRO_Tool_Info_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>391</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Sans</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="rules" stdset="0">
+         <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:file&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;string&quot;:}]
+
+</string>
+        </property>
+        <property name="dialogName" stdset="0">
+         <string>_dialog</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="frame_Part">
+       <property name="geometry">
+        <rect>
+         <x>1070</x>
+         <y>10</y>
+         <width>271</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label_Part_Touch_Off">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>91</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Part</string>
+        </property>
+       </widget>
+       <widget class="DialogButton" name="dialogbutton_Part_Zero_Set">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>100</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Part Zero Set</string>
+        </property>
+        <property name="dialogName" stdset="0">
+         <string>set_work_offsets</string>
+        </property>
+       </widget>
+       <widget class="ActionButton" name="actionbutton_Part_Stop">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>70</y>
+          <width>120</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>STOP</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="actionName" stdset="0">
+         <string>program.abort</string>
+        </property>
+       </widget>
+       <widget class="ActionButton" name="actionbutton_Part_Cycle_Start">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>10</y>
+          <width>120</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Cycle Start</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="actionName" stdset="0">
+         <string>program.run</string>
+        </property>
+       </widget>
       </widget>
      </widget>
     </item>
