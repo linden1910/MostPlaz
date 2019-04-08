@@ -654,7 +654,7 @@
          <string notr="true"/>
         </property>
         <property name="maximum">
-         <number>200</number>
+         <number>100</number>
         </property>
         <property name="sliderPosition">
          <number>100</number>
@@ -679,7 +679,7 @@
          <set>Qt::AlignCenter</set>
         </property>
         <property name="rules" stdset="0">
-         <string/>
+         <string>[]</string>
         </property>
        </widget>
        <widget class="DialogButton" name="dialogbutton_Feed_Override">
@@ -1557,12 +1557,12 @@
          </property>
         </widget>
        </widget>
-       <widget class="GcodeBackplot" name="gcodebackplot" native="true">
+       <widget class="GcodeBackplot" name="gcodebackplot">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>591</width>
+          <x>50</x>
+          <y>0</y>
+          <width>401</width>
           <height>461</height>
          </rect>
         </property>
@@ -1614,7 +1614,7 @@
          <string/>
         </property>
         <property name="rules" stdset="0">
-         <string/>
+         <string>[]</string>
         </property>
         <property name="dialogName" stdset="0">
          <string>_dialog</string>
@@ -1642,7 +1642,7 @@
          <string/>
         </property>
         <property name="rules" stdset="0">
-         <string/>
+         <string>[]</string>
         </property>
         <property name="dialogName" stdset="0">
          <string>_dialog</string>
@@ -1973,31 +1973,31 @@
  </widget>
  <customwidgets>
   <customwidget>
+   <class>RecentFileComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qtpyvcp.widgets.input_widgets.recent_file_combobox</header>
+  </customwidget>
+  <customwidget>
+   <class>GcodeBackplot</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.display_widgets.gcode_backplot.gcode_backplot</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
    <class>GcodeEditor</class>
    <extends>QFrame</extends>
    <header>qtpyvcp.widgets.input_widgets.gcode_editor</header>
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>RecentFileComboBox</class>
-   <extends>QComboBox</extends>
-   <header>qtpyvcp.widgets.input_widgets.recent_file_combobox</header>
-  </customwidget>
-  <customwidget>
-   <class>ActionButton</class>
-   <extends>QPushButton</extends>
-   <header>qtpyvcp.widgets.button_widgets.action_button</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>StatusLabel</class>
-   <extends>QLabel</extends>
-   <header>qtpyvcp.widgets.display_widgets.status_label</header>
-  </customwidget>
-  <customwidget>
    <class>DialogButton</class>
    <extends>QPushButton</extends>
    <header>qtpyvcp.widgets.button_widgets.dialog_button</header>
+  </customwidget>
+  <customwidget>
+   <class>VCPSettingsSlider</class>
+   <extends>QSlider</extends>
+   <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
   </customwidget>
   <customwidget>
    <class>MDIEntry</class>
@@ -2010,15 +2010,15 @@
    <header>qtpyvcp.widgets.input_widgets.action_slider</header>
   </customwidget>
   <customwidget>
-   <class>VCPSettingsSlider</class>
-   <extends>QSlider</extends>
-   <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
+   <class>ActionButton</class>
+   <extends>QPushButton</extends>
+   <header>qtpyvcp.widgets.button_widgets.action_button</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
-   <class>GcodeBackplot</class>
-   <extends>QWidget</extends>
-   <header>qtpyvcp.widgets.display_widgets.gcode_backplot.gcode_backplot</header>
-   <container>1</container>
+   <class>StatusLabel</class>
+   <extends>QLabel</extends>
+   <header>qtpyvcp.widgets.display_widgets.status_label</header>
   </customwidget>
  </customwidgets>
  <resources>

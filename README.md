@@ -20,3 +20,6 @@ git push origin master
 git pull
 
 /home/plaz/Git/Dev-QtpyVcp/qtpyvcp/pyqt5designer/Qt5.7.1-64bit
+
+alias python=/usr/bin/python2.7
+
